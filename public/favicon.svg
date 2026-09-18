@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Xrepot">
+  <rect width="64" height="64" rx="16" fill="#07111f"/>
+  <path d="M17 14h11.5L47 50H35.5z" fill="#8ff5cb"/>
+  <path d="M47 14H35.5L17 50h11.5z" fill="#5f8cff"/>
+  <circle cx="17" cy="14" r="4" fill="#ffc857"/>
+</svg>
