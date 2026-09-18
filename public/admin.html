@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex,nofollow" />
+    <title>Xrepot | Administración</title>
+    <link rel="stylesheet" href="/assets/style.css?v=2" />
+  </head>
+  <body class="admin-body">
+    <main class="admin-shell">
+      <section id="login-view" class="login-card">
+        <span class="brand">XREPOT</span><p class="eyebrow">Panel privado</p><h1>Administración</h1>
+        <form id="login-form" class="form-stack"><label>Correo<input type="email" name="email" autocomplete="email" required /></label><label>Contraseña<input type="password" name="password" autocomplete="current-password" required /></label><button>Entrar al panel</button><p class="form-error" id="login-error" role="alert"></p></form>
+      </section>
+      <section id="dashboard-view" hidden>
+        <header class="admin-header"><span class="brand">XREPOT</span><div><span id="admin-email"></span><button class="text-button" id="logout-button">Salir</button></div></header>
+        <div class="dashboard-title"><p class="eyebrow">Panel privado</p><h1>Control del sitio</h1></div>
+        <div class="dashboard-grid">
+          <article class="panel status-panel"><div><p class="panel-label">Estado público</p><h2 id="maintenance-label">Mantenimiento activo</h2><p id="maintenance-description">Las personas visitantes ven el aviso de mantenimiento.</p></div><label class="switch"><input type="checkbox" id="maintenance-toggle" /><span></span></label></article>
+          <article class="panel"><p class="panel-label">Publicar novedad</p><form id="announcement-form" class="form-stack compact"><label>Título<input name="title" maxlength="100" required /></label><label>Mensaje<textarea name="body" maxlength="500" required></textarea></label><label>Imagen <span class="field-hint">Opcional · JPG, PNG, WEBP o GIF · máx. 2 MB</span><input type="file" name="image" accept="image/jpeg,image/png,image/webp,image/gif" /></label><button>Publicar anuncio</button><p class="form-error" id="announcement-error" role="alert"></p></form></article>
+          <article class="panel wide"><p class="panel-label">Anuncios publicados</p><div id="admin-announcements" class="admin-list"></div></article>
+          <article class="panel wide"><p class="panel-label">Cuentas administradoras</p><form id="admin-form" class="inline-form"><input type="email" name="email" placeholder="correo@xrepot.com" required /><input type="password" name="password" placeholder="Contraseña (12+ caracteres)" minlength="12" required /><button>Añadir cuenta</button></form><p class="form-error" id="admin-error" role="alert"></p><div id="admin-users" class="admin-list"></div></article>
+        </div>
+      </section>
+    </main>
+    <script src="/assets/admin.js?v=2" defer></script>
+  </body>
+</html>

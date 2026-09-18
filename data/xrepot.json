@@ -1,0 +1,13 @@
+{
+  "maintenance": true,
+  "updatedAt": "2026-09-18T17:08:19.341Z",
+  "admins": [
+    {
+      "id": "b27688d5-f6b1-44f4-b89d-b9a506eacd05",
+      "email": "admin@xrepot.com",
+      "passwordHash": "1a9dc2f1a95bdd54c3a09cfe66e89019:b91e9db974bc9178930840ba39dafd866ca5b5acff9cc847e7ff6ea3327d442ad3d573e1bd073b6b827b780b253c5a3580720eea692e3670da9c69b2bcaa2886",
+      "createdAt": "2026-09-18T16:48:08.871Z"
+    }
+  ],
+  "announcements": []
+}
